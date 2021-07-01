@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+            <style>
+                *{
+                    box-sizing:border-box;
+                    padding:0;
+                    margin:0;
+                }
+                .cardtitle{
+                    text-transform: uppercase;
+                    text-emphasis-color:blue;
+                    
+                }
+                ul{
+                    list-style-type:square;
+                }
+                #clients{
+                    display:flex;
+                    flex-direction:column;
+
+                    max-height:100px;
+                    max-width:100px;
+                }
+                .spun1{
+                    float:left;
+                    width:50%;
+                }
+                .spun2{
+                    float:right;
+                    width:50%;
+                }
+                .concch{
+                    margin-top:20px;
+
+                }
+                .inner{
+                    overflow:hidden;
+                }
+                .inner img{
+                    transition:all 1.5s ease;
+                }
+                .inner:hover img{
+                    transform:scale(1.5);
+                }
+                #terms{
+                    background:rgb(162, 219, 105);
+                }
+                .footer{
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding:10px;
+                }
+            </style>
+    </head>
+    <body>
+        
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-p4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-p4">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Portfolio
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">portfolio section-1</a></li>
+                                <li><a class="dropdown-item" href="#">portfolio section-2</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">portfolio section-3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Our Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Find Us</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div id="caro-1" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li type="button" data-bs-target="#caro-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+                  <li type="button" data-bs-target="#caro-1" data-bs-slide-to="1" aria-label="Slide 2"></li>
+                  <li type="button" data-bs-target="#caro-1" data-bs-slide-to="2" aria-label="Slide 3"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="darth-vader.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="paris-hd-wallpaper-1920x1080.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="mountain.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#caro-1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#caro-1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="card-group text-center bg-success">
+                    <div class="card m-2">
+                        <img src="" alt="">
+                        <div class="card-body body-1">
+                            <i class="fas fa-atom fa-3x"></i>
+                                <span>
+                                    <h6>heading</h6>
+                                </span>
+                            </i>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptate repellendus voluptates dolorum fugit blanditiis laborum optio, mollitia, cupiditate.
+                            </p>
+                            <button class="btn btn-danger">Read More</button>
+                        </div>
+                    </div>
+                    <div class="card m-2">
+                        <img src="" alt="">
+                        <div class="card-body body-1">
+                            <i class="fas fa-atom fa-3x"></i>
+                                <span>
+                                    <h6>heading</h6>
+                                </span>
+                            </i>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptate repellendus voluptates dolorum fugit blanditiis laborum optio, mollitia, cupiditate.
+                            </p>
+                            <button class="btn btn-danger">Read More</button>
+                        </div>
+                    </div>
+                    <div class="card m-2">
+                        <img src="" alt="">
+                        <div class="card-body body-1">
+                            <i class="fas fa-atom fa-3x"></i>
+                                <span>
+                                    <h6>heading</h6>
+                                </span>
+                            </i>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptate repellendus voluptates dolorum fugit blanditiis laborum optio, mollitia, cupiditate.
+                            </p>
+                            <button class="btn btn-danger">Read More</button>
+                        </div>
+                    </div>
+                    <div class="card m-2">
+                        <img src="" alt="">
+                        <div class="card-body body-1">
+                            <i class="fas fa-atom fa-3x"></i>
+                                <span>
+                                    <h6>heading</h6>
+                                </span>
+                            </i>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptate repellendus voluptates dolorum fugit blanditiis laborum optio, mollitia, cupiditate.
+                            </p>
+                            <button class="btn btn-danger">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container concch" >
+            <div class="row justify-content-center text-center">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="inner">
+                            <img class="card-img-top" src="reach-reading.jpg" alt="darth-vader">
+                        </div>
+                        <div class="card-body">
+                            <h6>about us</h6>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis in mollitia saepe? A consectetur aliquid ea,
+                                vitae, unde exercitationem tempora magnam quaerat ad dicta laudantium eos. Quos sed sint voluptatem?</p>
+                            <a href="#" class="btn btn-danger">find more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="inner" >
+                            <img class="card-img-top" src="prioi.jpg" alt="darth-vader">
+                        </div>
+                        <div class="card-body">
+                            <h6>design</h6>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis in mollitia saepe? A consectetur aliquid ea,
+                                vitae, unde exercitationem tempora magnam quaerat ad dicta laudantium eos. Quos sed sint voluptatem?</p>
+                            <a href="#" class="btn btn-primary">find more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="inner">
+                            <img class="card-img-top" src="brib.jpg" alt="darth-vader">
+                        </div>
+                        <div class="card-body">
+                            <h6>portfolio</h6>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis in mollitia saepe? A consectetur aliquid ea,
+                                vitae, unde exercitationem tempora magnam quaerat ad dicta laudantium eos. Quos sed sint voluptatem?</p>
+                            <a href="#" class="btn btn-primary">find more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <span>Our Happy Clients</span>
+                <div class="row row-cols-lg-6 row-cols-md-6 row-cols-sm-3">
+                    <img src="logo2.png" alt="">
+                    <img src="logo3.png" alt="">
+                    <img src="free-logo-space-template-design-39cac50098804820776e4efc76d5eb85.jpg" alt="">
+                    <img src="xpeng-logo.png" alt="">
+                    <img src="team-14-logo.png" alt="">
+                    <img src="team-14-logo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-3" id="terms">
+            <div class="row text-center">
+                <div class="col col-md-4">
+                    <h4>MODUS versus</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quis reiciendis ullam exercitationem eos nostrum
+                        quibusdam, ipsum deserunt aliquam quaerat vel animi eius odit ea in, doloribus commodi, accusamus vitae.</p>
+                    <br>
+                    <span>Phone:<var>9789978904</var></span>
+                    <br>
+                    <span>E-mail: <i>bhuvanesh@gmail.com</i></span>
+                </div>
+                <div class="col col-md-4">
+                    <section class="prefoot">
+                        <ol class="spun1">
+                            <span>Contact</span>
+                            <li>Contact Us</li>
+                            <li>FAQ's</li>
+                            <li>Times</li>
+                            <li>Privacy</li>
+                            <li>Testimonals</li>
+                            
+                        </ol>
+                    </section>
+                
+                    <section>
+                        <ol class="spun2">
+                                <span>Community</span>
+                                <li>Community</li>
+                                <li>Team Up</li>
+                                <li>Blogs</li>
+                                <li>Security</li>
+                                
+                        </ol>
+                    </section>
+                </div>
+                <div class="col col-md-4">
+                        <h4>from the BLOG</h4>
+                    <p>
+                        <span>
+                        <i class="fab fa-battle-net fa-2x"></i>
+                        </span> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <br>
+                    <p>
+                        <span>
+                            <i class="fab fa-battle-net fa-2x"></i>
+                        </span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                    <span>Phone:<var>9789978904</var></span>
+                    <br>
+                    <span>E-mail: <i>bhuvanesh@gmail.com</i></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer bg-success bg-gradient">
+            <div class="col text-start">
+                <h6 class="text text-start">
+                    Modus <span><em>Versus</em></span>
+                </h6>
+            </div>
+
+            <div class="col text-end">
+                <span class="icon text-end">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </span>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+   
+    </body>
+</html>
